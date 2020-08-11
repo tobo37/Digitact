@@ -78,6 +78,7 @@ def handle_input(argv):
         package_json = load_package_json()
         
         if(arg == 'dep' or arg == 'save' or arg == 'dependencies'):
+            dependencies = package_json['dependencies']
             update_group(dependencies)
         elif(arg == 'all' or arg == 'updateall'):
             dependencies = package_json['dependencies']
