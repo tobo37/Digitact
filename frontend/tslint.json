@@ -13,12 +13,20 @@
     ]
   },
   "rules": {
+    "align": {
+      "options": [
+        "parameters",
+        "statements"
+      ]
+    },
     "array-type": false,
     "arrow-parens": false,
+    "arrow-return-shorthand": true,
     "curly": true,
     "deprecation": {
       "severity": "warn"
     },
+    "eofline": true,
     "import-blacklist": [
       true,
       "rxjs/Rx",
@@ -26,6 +34,12 @@
       {"@ionic/angular": ["AlertController","LoadingController", "ToastController"]},
       {"@ionic/core": ["AlertOptions", "LoadingOptions", "ToastOptions"]}
     ],
+    "import-spacing": true,
+    "indent": {
+      "options": [
+        "spaces"
+      ]
+    },
     "interface-name": false,
     "jsdoc-format": [
       true,
@@ -92,6 +106,20 @@
       true,
       "single"
     ],
+    "semicolon": {
+      "options": [
+        "always"
+      ]
+    },
+    "space-before-function-paren": {
+      "options": {
+        "anonymous": "never",
+        "asyncArrow": "always",
+        "constructor": "never",
+        "method": "never",
+        "named": "never"
+      }
+    },
     "trailing-comma": false,
     "triple-equals": [
       true,
@@ -102,6 +130,24 @@
       "call-signature",
       "parameter"
     ],
+    "typedef-whitespace": {
+      "options": [
+        {
+          "call-signature": "nospace",
+          "index-signature": "nospace",
+          "parameter": "nospace",
+          "property-declaration": "nospace",
+          "variable-declaration": "nospace"
+        },
+        {
+          "call-signature": "onespace",
+          "index-signature": "onespace",
+          "parameter": "onespace",
+          "property-declaration": "onespace",
+          "variable-declaration": "onespace"
+        }
+      ]
+    },
     "unnecessary-else": true,
     "no-output-on-prefix": true,
     "no-inputs-metadata-property": true,
@@ -129,5 +175,22 @@
     "no-conditional-assignment": true,
     "no-sparse-arrays": true,
     "no-boolean-literal-compare": true
-  }
+  ,    "variable-name": {
+      "options": [
+        "ban-keywords",
+        "check-format",
+        "allow-pascal-case"
+      ]
+    },
+    "whitespace": {
+      "options": [
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-separator",
+        "check-type",
+        "check-typecast"
+      ]
+    }
+}
 }
